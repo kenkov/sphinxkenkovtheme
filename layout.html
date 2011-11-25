@@ -1,0 +1,112 @@
+{%- block doctype %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{%- endblock doctype %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+
+{% extends "basic/layout.html" %}
+
+{%- block header %}
+  <div id="header">
+    <h1><a href="http://www.kenkov.org/">kenkov.org</a></h1>
+    <div id="menu">
+      <ul>
+        <li><a href="http://www.kenkov.org/">Top</a></li>
+        <li><a href="http://www.kenkov.org/aboutus/aboutus.html">About Us</a></li>
+        <li><a href="http://">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+{%- endblock header %}
+
+{% block relbar1 %}
+<div id="relbar1">
+  <ul>
+    <li><a href="http://www.kenkov.org/">Top</a></li>
+    <li>
+    {% if prev %}
+    <li><a href="{{ prev.link }}">{{ prev.title }} &lt&lt prevous</a></li>
+    {% endif %}
+    {% if next %}
+    <li><a href="{{ next.link }}">next &gt&gt {{ next.title }}</a></li>
+    {% endif %}
+  </ul>
+</div>
+{% endblock relbar1 %}
+
+{% block sidebar2 %}
+  <div id="sidebar">
+  {{ sidebar() }}
+  <!-- twitterウィジェットの設置 --> 
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script> 
+    <div class="twitter"> 
+      <script> 
+      new TWTR.Widget({ 
+        version: 2, 
+        type: 'profile', 
+        rpp: 4, 
+        interval: 6000, 
+        width: 200, 
+        height: 300, 
+        theme: { 
+          shell: { 
+            background: '#333333', 
+            color: '#ffffff' 
+          }, 
+          tweets: { 
+            background: '#000000', 
+            color: '#ffffff', 
+            links: '#4aed05' 
+          } 
+        }, 
+        features: { 
+          scrollbar: false, 
+          loop: false, 
+          live: false, 
+          hashtags: true, 
+          timestamp: true, 
+          avatars: false, 
+          behavior: 'all' 
+        } 
+      }).render().setUser('kenkov').start(); 
+      </script> 
+    </div>
+    </div>
+{% endblock sidebar2 %}
+
+{%- block document %}
+  <div id="document">
+    {%- block body %}{%- endblock body %}
+  </div>
+{%- endblock document %}
+</div>
+
+{% block relbar2 %}
+{% endblock relbar2 %}
+
+{%- block footer %}
+<div id="footer">
+  <div id="title">
+    kenkov.org
+  </div>
+  <div id="copyright">
+    &copy {{ copyright }} <br />
+    このドキュメントは <a href="http://sphinx-users.jp/gettingstarted/index.html">Sphinx {{ sphinx_version }}</a> によって作成されました。
+  </div>
+  <br />
+  <div id="lastupdate">
+    Last updated on {{ last_updated }}
+  </div>
+  
+</div>
+{%- endblock footer %}
+
+</body>
+</html>

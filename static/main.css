@@ -1,0 +1,247 @@
+a {
+  color: #5a6f84;
+}
+
+div#header {
+  /*
+  background-color: white;
+  */
+  margin 0px;
+  padding: 10px;
+}
+
+div#header h1 {
+  /*
+  color: black;
+  */
+  margin: 0px;
+  font-size: xx-large;
+}
+
+div#header h1 a {
+  color: black;
+  text-decoration: none;
+}
+
+div#header div#menu {
+  /* margin and padding */
+  padding-left: 20px;
+  padding-right: 20px;
+
+  /* 色の設定 */
+  color: black;
+  background-color: white;
+
+  text-align: right;
+
+  /* borderの設定 */
+  /*
+  border-style: solid;
+  border-width: 1px;
+  border-color: #5a6f84;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  */
+}
+
+/* 次を指定しないと、ul するとmargin がかなりとられてしまう。 */
+div#header div#menu ul {
+  margin: 0px;
+}
+
+div#header div#menu li {
+  display: inline;
+  font-weight: bold;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  list-style-type: none;
+}
+
+div#header div#menu a {
+  text-decoration: none;
+  color: black;
+}
+
+div#relbar1 {
+  /* margin and padding */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  /* 色の設定 */
+  color: white;
+  background-color: #5a6f84;
+
+  /* borderの設定 */
+  border-style: solid;
+  border-width: 2px;
+  border-color: #5a6f84;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+div#relbar1 ul {
+  margin: 0px;
+}
+
+div#relbar1 li {
+  display: inline;
+
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  list-style-type: none;
+}
+
+div#relbar1 a {
+  text-decoration: none;
+  color: white;
+}
+
+/* sidebar の設定 */
+div#sidebar {
+  /* 配置の設定 */
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  float: left;
+  width: 20%;
+
+  /* 色の設定 */
+  background-color: white;
+
+  /* border の設定 */
+  border-left-style: dotted;
+  border-left-color: grey;
+}
+
+div#sidebar h3 {
+  /* 配置の設定 */
+  padding: 0px;
+
+  /* 色の設定 */
+  background-color: #5a6f84;
+  color: white;
+
+  /* borderの設定 */
+  border-style: solid;
+  border-width: 2px;
+  border-color: #5a6f84;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+div#sidebar h3 a {
+  /* 色の設定 */
+  color: white;
+
+  /* アンダーラインの削除 */
+  text-decoration: none;
+}
+
+div#sidebar h4 {
+  border-bottom-style: dotted;
+  border-width: 1px;
+  border-color: #5a6f84;
+
+  text-decoration: none;
+}
+
+div#document {
+  /*
+  background-color: #f7fed3;
+  */
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  float:left;
+  width: 70%;
+}
+
+div#document h1 {
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #5a6f84;
+}
+
+div#document h2 {
+    border-bottom-style: dotted;
+    border-width: 2px;
+    border-color: #5a6f84;
+}
+
+div#document h3 {
+    border-bottom-style: dotted;
+    border-width: 1px;
+    border-color: #5a6f84;
+}
+
+/* footer */
+div#footer {
+  background-color: #5a6f84;
+  color: white;
+  clear: both;
+
+  /* margin and padding */
+  padding-top: 2px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  
+  border-style: solid;
+  border-width: 1px;
+  border-color: #5a6f84;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+div#footer div#title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: x-large;
+}
+
+div#footer div#copyright {
+}
+
+div#footer div#copyright a {
+  color: white;
+}
+
+div#footer div#lastdate {
+}
+
+/* toctree */
+li.toctree-l1 {
+  list-style-type: none;
+}
+
+li.toctree-l2 {
+  list-style-type: disc;
+}
+
+/* note */
+div.note {
+    padding: 10px 15px 10px 80px;
+    background: #eee url(alert_info_32.png) 15px 15px no-repeat;
+    min-height: 42px;
+}
+
+/* warning */
+div.warning {
+    padding: 10px 15px 10px 80px;
+    background: #ffe4e4 url(alert_warning_32.png) 15px 15px no-repeat;
+    min-height: 42px;
+}
