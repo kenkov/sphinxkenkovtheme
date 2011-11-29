@@ -15,12 +15,12 @@
 
 {%- block header %}
   <div id="header">
-    <h1><a href="http://www.kenkov.org/">kenkov.org</a></h1>
+    <h1><a href="{{pathto('index')}}">kenkov.org</a></h1>
     <div id="menu">
       <ul>
-        <li><a href="http://www.kenkov.org/">Top</a></li>
-        <li><a href="http://www.kenkov.org/aboutus/aboutus.html">About Us</a></li>
-        <li><a href="http://">Contact</a></li>
+        <li><a href="{{pathto('index')}}">Top</a></li>
+        <li><a href="{{pathto('aboutus/aboutus')}}">About Us</a></li>
+        <li>Contact</li>
       </ul>
     </div>
   </div>
@@ -29,7 +29,7 @@
 {% block relbar1 %}
 <div id="relbar1">
   <ul>
-    <li><a href="http://www.kenkov.org/">Top</a></li>
+    <li><a href="{{pathto('index')}}">Top</a></li>
     <li>
     {% if prev %}
     <li><a href="{{ prev.link }}">{{ prev.title }} &lt&lt prevous</a></li>
