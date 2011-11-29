@@ -18,8 +18,8 @@
     <h1><a href="{{pathto('index')}}">kenkov.org</a></h1>
     <div id="menu">
       <ul>
-        <li><a href="{{pathto('index')}}">Top</a></li>
-        <li><a href="{{pathto('aboutus/aboutus')}}">About Us</a></li>
+        <li><a href="{{ pathto('index') }}">Top</a></li>
+        <li><a href="{{ pathto('aboutus/aboutus') }}">About Us</a></li>
         <li>Contact</li>
       </ul>
     </div>
@@ -29,7 +29,7 @@
 {% block relbar1 %}
 <div id="relbar1">
   <ul>
-    <li><a href="{{pathto('index')}}">Top</a></li>
+    <li><a href="{{ pathto('index') }}">Top</a></li>
     <li>
     {% if prev %}
     <li><a href="{{ prev.link }}">{{ prev.title }} &lt&lt prevous</a></li>
@@ -43,6 +43,12 @@
 
 {% block sidebar2 %}
   <div id="sidebar">
+    <div id="tableofcontents">
+      <h3>目次</h3>
+      <ul>
+        <li><a href="{{ pathto('project/project') }}">Project</a></li>
+      </ul>
+    </div>
   {{ sidebar() }}
   <!-- twitterウィジェットの設置 --> 
     <!-- <a href="http://hackage.haskell.org/platform" ><img src="http://hackage.haskell.org/platform/icons/button-100.png"></a> -->
