@@ -29,7 +29,11 @@
 {% block relbar1 %}
 <div id="relbar1">
   <ul>
-    <li><a href="{{ pathto('index') }}">Top</a></li>
+    <li><a href="{{ pathto('index') }}">トップに戻る</a></li>
+    <li><a href="{{ pathto('project/project') }}">プロジェクト</a></li>
+    <li><a href="{{ pathto('haskell/haskell') }}">Haskell</a></li>
+    <li><a href="{{ pathto('python/python') }}">Python</a></li>
+    <li><a href="{{ pathto('document') }}">ドキュメント</a></li>
     <li>
     {% if prev %}
     <li><a href="{{ prev.link }}">{{ prev.title }} &lt&lt prevous</a></li>
@@ -46,8 +50,10 @@
     <div id="tableofcontents">
       <h3>目次</h3>
       <ul>
-        <li><a href="{{ pathto('project/project') }}">Project</a></li>
+        <li><a href="{{ pathto('project/project') }}">プロジェクト</a></li>
         <li><a href="{{ pathto('haskell/haskell') }}">Haskell</a></li>
+        <li><a href="{{ pathto('python/python') }}">Python</a></li>
+        <li><a href="{{ pathto('document') }}">ドキュメント</a></li>
       </ul>
     </div>
   {{ sidebar() }}
