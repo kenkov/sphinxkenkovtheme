@@ -121,6 +121,7 @@ div#sidebar {
 
   /* border の設定 */
   border-left-style: dotted;
+  border-left-width: 1px;
   border-left-color: grey;
 }
 
@@ -274,4 +275,38 @@ div.warning {
     padding: 10px 15px 10px 80px;
     background: #ffe4e4 url(alert_warning_32.png) 15px 15px no-repeat;
     min-height: 42px;
+}
+
+
+/* ここからはautodoc の設定 */
+
+/* クラス名の前につくモジュール名 */
+dl.class tt.descclassname {
+}
+/* クラス名 */
+dl.class tt.descname {
+    font-weight: bold;
+}
+/* クラスの説明 */
+dl.class dd p {
+    color: grey;
+}
+/* クラスのメソッド名 */
+dl.class dd dl.method tt.descname {
+    font-weight: bold;
+}
+/* クラスのメソッドの説明 */
+dl.class dd dl.method dd p {
+    color: grey;
+}
+/* 関数の前につくモジュール名 */
+dl.function tt.descclassname {
+}
+/* 関数名 */
+dl.function tt.descname {
+    font-weight: bold;
+}
+/* 関数の詳細 */
+dl.function dd p {
+    color: grey;
 }
