@@ -310,3 +310,10 @@ dl.function tt.descname {
 dl.function dd p {
     color: grey;
 }
+
+
+/* インラインマークアップに対応 */
+span.pre {
+    background-color: Chartreuse;
+}
+

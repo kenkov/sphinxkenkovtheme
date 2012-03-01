@@ -32,8 +32,8 @@
   <ul>
     <li><a href="{{ pathto('index') }}">トップに戻る</a></li>
     <li><a href="{{ pathto('project/project') }}">プロジェクト</a></li>
-    <li><a href="{{ pathto('haskell/haskell') }}">Haskell</a></li>
     <li><a href="{{ pathto('python/python') }}">Python</a></li>
+    <li><a href="{{ pathto('haskell/haskell') }}">Haskell</a></li>
     <li><a href="{{ pathto('document/document') }}">ドキュメント</a></li>
     <li>
     {% if prev %}
@@ -52,15 +52,26 @@
       <h3>目次</h3>
       <ul>
         <li><a href="{{ pathto('project/project') }}">プロジェクト</a></li>
-        <li><a href="{{ pathto('haskell/haskell') }}">Haskell</a></li>
         <li><a href="{{ pathto('python/python') }}">Python</a></li>
+        <li><a href="{{ pathto('haskell/haskell') }}">Haskell</a></li>
         <li><a href="{{ pathto('document') }}">ドキュメント</a></li>
       </ul>
     </div>
+  <div id="kenkovlink">
+    <h3>リンク</h3>
+    <ul>
+      <li><a href="http://www.kenkov.org">kenkov.org</a></li>
+      <li><a href="http://github.com/kenkov">GitHub</a></li>
+      <li><a href="http://twitter.com/#!/kenkov">Twitter</a></li>
+      <li><a href="http://d.hatena.ne.jp/kenkov/">はてなDiary</a></li>
+    </ul>
+  </div>
   {{ sidebar() }}
+    <div id="haskellplatform">
+      <!-- <a href="http://hackage.haskell.org/platform" ><img src="http://hackage.haskell.org/platform/icons/button-100.png"></a> -->
+      <a href="http://hackage.haskell.org/platform" ><img src="http://hackage.haskell.org/platform/icons/button-64.png"></a>
+    </div>
   <!-- twitterウィジェットの設置 --> 
-    <!-- <a href="http://hackage.haskell.org/platform" ><img src="http://hackage.haskell.org/platform/icons/button-100.png"></a> -->
-    <a href="http://hackage.haskell.org/platform" ><img src="http://hackage.haskell.org/platform/icons/button-64.png"></a>
     <script src="http://widgets.twimg.com/j/2/widget.js"></script> 
     <div class="twitter"> 
       <script> 
